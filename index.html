@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <p>Notes app</p>
+    </header>
+    <section class="main-section">
+      <h1>Save your notes, track your tasks</h1>
+
+      <div>
+        <div class="flex">
+          <h2>All your tasks</h2>
+          <a href="#" class="see-history">
+            <p>See history</p>
+          </a>
+        </div>
+        <div class="deleted-tasks__wrapper hidden">
+          <ul class="deleted-tasks" id="deleted-tasks"></ul>
+        </div>
+        <div class="tasks-div">
+          <label for="taskInput" class="label-for-task visually-hidden">Add task</label>
+          <input
+            type="text"
+            id="taskInput"
+            class="task-input"
+            placeholder="Enter your task"
+          />
+          <button type="button" class="add-task-button">Add Task</button>
+        </div>
+        <ul class="saved-tasks" id="saved-tasks"></ul>
+      </div>
+    </section>
+  </body>
+</html>
